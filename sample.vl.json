@@ -20,11 +20,7 @@
     },
     "color": {
       "field": "area",
-      "type": "nominal",
-      "legend": {
-        "orient": "top-left",
-        "direction": "horizontal"
-      }
+      "type": "nominal"
     }
   }
 }

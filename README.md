@@ -1,2 +1,2 @@
 # obviously
-Starter One Page Website
+A sample one-page website for getting on to the web.

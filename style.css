@@ -76,11 +76,37 @@ section {
   gap: 1rem;
 }
 
-.vis {
+/* figure {
+  display: grid;
+  grid-template-rows: 300px ;
+  align-items: center;
   padding: var(--space);
-  max-width: 300px;
+  margin: 0;
+  max-width: 400px;
   outline: 3px solid whitesmoke;
 }
+
+figcaption {
+
+} */
+
+figure {
+  margin: 0;
+  padding: var(--space);
+  max-width: 400px;
+  outline: 3px solid whitesmoke;
+}
+
+figcaption {
+  padding-bottom: var(--space);
+}
+
+.vis {
+  /* display: flex;
+  align-content: center; */
+  width: 100%;
+}
+
 
 
 

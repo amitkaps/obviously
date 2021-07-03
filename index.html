@@ -50,27 +50,45 @@
         <!-- Container for Visualisation -->
         <div class="container">
           <!-- Write it down  -->
-          <svg class="vis" width="200" height="200" viewBox="0 0 100 100">
-            <rect x="0" y="0" width="50" height="50" fill="blue" />
-            <rect x="20" y="20" width="50" height="50" fill="red" />
-            <rect x="40" y="40" width="50" height="50" fill="green" />
-          </svg>
+          <figure>
+            <figcaption>Inline SVG file</figcaption>
+            <svg class="vis" width="200" height="200" viewBox="0 0 100 100">
+              <rect x="0" y="0" width="50" height="50" fill="blue" />
+              <rect x="20" y="20" width="50" height="50" fill="red" />
+              <rect x="40" y="40" width="50" height="50" fill="green" />
+            </svg>
+          </figure>
 
           <!-- From a SVG File -->
-          <object class="vis" type="image/svg+xml" data="circles.svg"></object>
+          <figure>
+            <figcaption>External SVG file</figcaption>
+            <object class="vis" type="image/svg+xml" data="circles.svg"></object>
+          </figure>
 
           <!-- From Figma / Sketching App - Exported as SVG -->
-          <object class="vis" type="image/svg+xml" data="figma.svg"></object>
+          <figure>
+            <figcaption>From Drawing App: Figma </figcaption>
+            <object class="vis" type="image/svg+xml" data="figma.svg"></object>
+          </figure>
 
           <!-- From a Visualisation App - Exported as SVG -->
           <!-- Using image tag to make it responsive -->
-          <img class="vis" src="vis.svg"></object>
+          <figure>
+            <figcaption>From Visualisation App: RawGraphs </figcaption>
+            <img class="vis" src="vis.svg">
+          </figure>
 
           <!-- Created in the Browser e.g. VegaLite -->
-          <div class="vis" id="vis-inline"></div>
-
+          <figure>
+            <figcaption>From Script: Vegalite JSON </figcaption>
+            <div class="vis" id="vis-inline"></div>
+          </figure>
           <!-- VegaLite from Using Sample CSV-->
-          <div class="vis" id="vis-csv"></div>
+          <figure>
+            <figcaption>From Script: Vegalite JSON + CSV </figcaption>
+            <div class="vis" id="vis-csv"></div>
+          </figure>
+
         </div>
       </section>
 

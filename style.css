@@ -1,10 +1,14 @@
-/* Syntax for CSS 
+/* Syntax for CSS:
 tag {
   propertyName: propertyValue
 }
---var ->                Abstracting Variables
-tag -> header, footer,  Basic HTML Markup Tags
-class -> .name          Abstracting Common Patterns
+
+tag    ->  header       Basic HTML Markup Tags
+.class -> .format       Abstracting common patterns
+#id    -> #vis-inline   Targeting specific element
+
+--var  -> --space       Abstracting variables
+
 */
 
 * {
@@ -40,6 +44,7 @@ body {
   color: var(--fontDarkColor);
 }
 
+/* For Header & Footer */
 header, footer {
   display: flex;
   justify-content: space-between;
@@ -69,6 +74,7 @@ section {
   padding: var(--Xspace) 0;
 }
 
+/* General Wrapper for Flex */
 .container {
   display: flex;
   flex-direction: row;
@@ -76,20 +82,7 @@ section {
   gap: 1rem;
 }
 
-/* figure {
-  display: grid;
-  grid-template-rows: 300px ;
-  align-items: center;
-  padding: var(--space);
-  margin: 0;
-  max-width: 400px;
-  outline: 3px solid whitesmoke;
-}
-
-figcaption {
-
-} */
-
+/* For the Visualisation Card */
 figure {
   margin: 0;
   padding: var(--space);

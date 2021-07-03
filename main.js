@@ -16,5 +16,28 @@ const spec = {
   }
 }
 
+const sample = {
+  "data": { "url": "sample.csv" },
+  "params": [{
+    "name": "paintbrush",
+    "select": {
+      "type": "point",
+      "on": "mouseover",
+      "nearest": true
+    }
+  }],
+  "mark": "circle",
+  "encoding": {
+    "x": { "field": "sales", "type": "quantitative" },
+    "y": { "field": "profit", "type": "quantitative" },
+    "size": { "value": 400 },
+    "color": {
+      "value": "grey",
+      "condition": { "param": "paintbrush", "field": "area", "type": "nominal" }
+    }
+  }
+}
+
 // Embed the spec at a particular id
-vegaEmbed('#vis', spec);
+vegaEmbed('#vis-inline', spec);
+vegaEmbed('#vis-csv', sample);

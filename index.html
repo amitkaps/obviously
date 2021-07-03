@@ -2,7 +2,7 @@
 
 <head>
   <meta charset="utf">
-  <title>Starter Obvious </title>
+  <title>Obviously! </title>
   <link rel="stylesheet" href="style.css">
   <script src="https://cdn.jsdelivr.net/npm/vega@5.20.2"></script>
   <script src="https://cdn.jsdelivr.net/npm/vega-lite@5.1.0"></script>
@@ -11,65 +11,79 @@
 
 
 <body>
+  <!-- Syntax for HTML: <tag attribute=value > Text <tag>-->
 
-  <!-- Syntax for 
-  <tag attribute=value > Text <tag>
-  
-  -->
-
-  <header class="format">
-    <h1>Obviously!!</h1>
-    <nav>
-      <a href="#portofolio">Portfolio</a>
-      <a href="#visuals">Visuals</a>
-      <a href="#methodology">Methodology</a>
-    </nav>
-  </header>
-
-  <main>
-    <section id="portfolio">
-      <h2> Portfolio</h2>
-      <div class="container">
-        <img src="https://source.unsplash.com/300x200/?abstract">
-        <img src="https://source.unsplash.com/300x200/?nature">
-        <img src="https://source.unsplash.com/300x200/?water">
-      </div>
-    </section>
-
-    <section id="visuals">
-      <h2>Visuals</h2>
-      <p>Here we are doing visualisation for the Vaccines</p>
-
-      <!-- Write it down  -->
-      <svg width="100" height="100">
-        <rect x="0" y="0" width="50" height="50" fill="blue" />
-        <rect x="20" y="20" width="50" height="50" fill="red" />
-        <rect x="40" y="40" width="50" height="50" fill="green" />
-      </svg>
-
-      <!-- From a SVG File -->
-      <object type="image/svg+xml" data="circles.svg"></object>
-
-      <!-- From Figma / Sketching App - Exported as SVG -->
-      <object type="image/svg+xml" data="figma.svg"></object>
-
-      <!-- From a Visualisation App - Exported as SVG -->
-      <object type="image/svg+xml" data="vis.svg"></object>
-
-      <!-- From JavaScript - Created in the Browser e.g.  VegaLite -->
-      <div id="vis"></div>
-    </section>
-
-    <section id="methodology">
-      <h2>Methodology</h2>
-      <p>Methodology about our visualisation</p>
-    </section>
-  </main>
+  <!-- Header Section -->
+  <div class="wrapper format">
+    <header>
+      <h1>Obviously!</h1>
+      <nav>
+        <a href="#portofolio">Portfolio</a>
+        <a href="#visuals">Visuals</a>
+        <a href="#methodology">Methodology</a>
+      </nav>
+    </header>
+  </div>
 
 
-  <footer class="format">
-    <p>Designed by Amit Kapoor</p>
-  </footer>
+
+  <!-- Main Section -->
+  <div class="wrapper">
+    <main>
+      <section id="portfolio">
+        <h2> Portfolio</h2>
+        <div class="container">
+          <img width=300 height=200 src="https://source.unsplash.com/300x200/?abstract">
+          <img width=300 height=200 src="https://source.unsplash.com/300x200/?nature">
+          <img width=300 height=200 src="https://source.unsplash.com/300x200/?water">
+        </div>
+      </section>
+
+      <section id="visuals">
+        <h2>Visuals</h2>
+        <p>Here we are adding our visualisation</p>
+
+        <!-- Container for Visualisation -->
+        <div class="container">
+          <!-- Write it down  -->
+          <svg class="vis" width="200" height="200" viewBox="0 0 100 100">
+            <rect x="0" y="0" width="50" height="50" fill="blue" />
+            <rect x="20" y="20" width="50" height="50" fill="red" />
+            <rect x="40" y="40" width="50" height="50" fill="green" />
+          </svg>
+
+          <!-- From a SVG File -->
+          <object class="vis" type="image/svg+xml" data="circles.svg"></object>
+
+          <!-- From Figma / Sketching App - Exported as SVG -->
+          <object class="vis" type="image/svg+xml" data="figma.svg"></object>
+
+          <!-- From a Visualisation App - Exported as SVG -->
+          <!-- Using image tag to make it responsive -->
+          <img class="vis" src="vis.svg"></object>
+
+          <!-- Created in the Browser e.g. VegaLite -->
+          <div class="vis" id="vis-inline"></div>
+
+          <!-- VegaLite from Using Sample CSV-->
+          <div class="vis" id="vis-csv"></div>
+        </div>
+      </section>
+
+      <section id="methodology">
+        <h2>Methodology</h2>
+        <p>Here we can add our more stuff about our methodology</p>
+      </section>
+    </main>
+  </div>
+
+  <!-- Footer Area -->
+  <div class="wrapper format">
+    <footer>
+      <p>Created by Amit Kapoor</p>
+      <p> Source on <a href="https://github.com/amitkaps/obviously" class="format"> Github</a></p>
+    </footer>
+  </div>
 
   <script src="main.js"></script>
 </body>

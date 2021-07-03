@@ -1,0 +1,37 @@
+{
+  "data": {
+    "url": "sample.csv",
+    "format": {
+      "type": "csv"
+    }
+  },
+  "params": [
+    {
+      "name": "paintbrush",
+      "select": {
+        "type": "point",
+        "on": "mouseover",
+        "nearest": true
+      }
+    }
+  ],
+  "mark": "circle",
+  "encoding": {
+    "x": {
+      "field": "sales",
+      "type": "quantitative"
+    },
+    "y": {
+      "field": "profit",
+      "type": "quantitative"
+    },
+    "color": {
+      "value": "grey",
+      "condition": {
+        "param": "paintbrush",
+        "field": "area",
+        "type": "nominal"
+      }
+    }
+  }
+}

@@ -14,6 +14,7 @@ class -> .name          Abstracting Common Patterns
 
 :root {
   --space: 1rem;
+  --Xspace: 3rem;
   --fontDarkColor: whitesmoke;
   --bgDarkColor: black;
 }
@@ -22,7 +23,7 @@ body {
   margin:0 ;
   padding:0;
   font-family: system-ui, sans-serif;
-  font-size: 20px;
+  font-size: 16px;
 }
 
 .format {
@@ -44,6 +45,10 @@ nav {
 
 main {
   padding: var(--space)
+}
+
+section {
+  padding: var(--Xspace) var(--space);
 }
 
 footer{

@@ -26,6 +26,7 @@ body {
   font-size: 16px;
 }
 
+
 .format {
   padding: var(--space);
   background-color: var(--bgDarkColor);
@@ -53,4 +54,10 @@ section {
 
 footer{
 
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
 }

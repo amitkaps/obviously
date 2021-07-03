@@ -93,7 +93,7 @@ figcaption {
 figure {
   margin: 0;
   padding: var(--space);
-  max-width: 400px;
+  max-width: 320px;
   outline: 3px solid whitesmoke;
 }
 
@@ -102,8 +102,6 @@ figcaption {
 }
 
 .vis {
-  /* display: flex;
-  align-content: center; */
   width: 100%;
 }
 

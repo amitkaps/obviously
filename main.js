@@ -1,7 +1,5 @@
 // Vega Lite Specification
 const spec = {
-  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "description": "A simple bar chart with embedded data.",
   "data": {
     "values": [
       { "a": "A", "b": 28 }, { "a": "B", "b": 55 }, { "a": "C", "b": 43 },
@@ -18,6 +16,10 @@ const spec = {
 
 const sample = {
   "data": { "url": "sample.csv" },
+  "padding": 0,
+  "width": 225,
+  "height": 225,
+  "autosize": "fit",
   "params": [{
     "name": "paintbrush",
     "select": {
@@ -33,7 +35,12 @@ const sample = {
     "size": { "value": 400 },
     "color": {
       "value": "grey",
-      "condition": { "param": "paintbrush", "field": "area", "type": "nominal" }
+      "condition": {
+        "param": "paintbrush",
+        "field": "area",
+        "type": "nominal",
+        "legend": null
+      }
     }
   }
 }

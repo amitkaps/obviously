@@ -78,7 +78,7 @@ section {
 
 .vis {
   padding: var(--space);
-  max-width: 400px;
+  max-width: 300px;
   outline: 3px solid whitesmoke;
 }
 

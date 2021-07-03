@@ -1,0 +1,51 @@
+
+/* Syntax for CSS 
+tag {
+  propertyName: propertyValue
+}
+--var ->                Abstracting Variables
+tag -> header, footer,  Basic HTML Markup Tags
+class -> .name          Abstracting Common Patterns
+*/
+
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --space: 1rem;
+  --fontDarkColor: whitesmoke;
+  --bgDarkColor: black;
+}
+
+body {
+  margin:0 ;
+  padding:0;
+  font-family: system-ui, sans-serif;
+  font-size: 20px;
+}
+
+.format {
+  padding: var(--space);
+  background-color: var(--bgDarkColor);
+  color: var(--fontDarkColor);
+}
+
+header{
+  display: flex;
+  justify-content: space-between;
+}
+
+nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+main {
+  padding: var(--space)
+}
+
+footer{
+
+}
